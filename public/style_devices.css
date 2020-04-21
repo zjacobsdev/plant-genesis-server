@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin-left: 1%;
+    background-color: rgb(116, 192, 202);
+
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb; /* js changes color */
+    border-radius: 50%;
+    display: inline-block;
+}
+h1 {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 i {
+    margin-right: 1%;
+
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+h2 + span {
+    font-weight: 800;
+}
+form{
+    font-size: 1.5rem;
+
+}
+form input{
+    border-radius: 5px;
+}
+
+button{
+    margin-top: 10px;
+    background-color:rgb(113, 142, 3);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(53, 83, 30);
+    border-radius: 5px;
+    font-size: 1.8rem;
+}
+ul{
+    list-style: none;
+    font-size: 1.8rem;
+}
+li{
+    margin: 25px 5% 25px 5%;
+}
+li span:nth-child(1){
+    font-weight: 800;
+
+}
+.hide{
+    display: none;
+}

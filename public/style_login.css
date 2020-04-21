@@ -1,0 +1,87 @@
+*{
+  box-sizing: border-box;
+  /* border: 1px solid blue; */
+}
+html{
+  font-size: 10px;
+}
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/logo_bg.jpg);
+
+}
+.jumbotron h1{
+  
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 3rem;
+  color:rgb(101,67,33);
+
+}
+
+h2{
+  font-size: 2rem;
+  color: rgb(101,67,33)
+}
+
+.btn-warning {
+
+  font-family: 'Cinzel Decorative', cursive;
+  color: #fff;
+  background-color:rgb(101,67,33);
+  border-color: rgb(113, 142, 3);
+}
+
+
+
+
+.jumbotron{
+
+  /* background-color: rgb(116, 192, 202);
+  border: 2px solid rgb(113, 142, 3);
+  border-radius: 20px; */
+
+  width: 670px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+
+
+}
+.container .jumbotron {
+  border-radius: 20px;
+  padding-left: 0;
+}
+
+
+.login100-form-title{
+  margin: 0px;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 70px 15px 74px 15px;
+}
+div.jumbotron {
+
+padding-left: 0;
+padding-right: 0;
+
+}
+
+@media screen and (min-width: 768px){
+
+.jumbotron {
+    padding-top: 0px;
+    padding-bottom: 48px;
+}
+
+}

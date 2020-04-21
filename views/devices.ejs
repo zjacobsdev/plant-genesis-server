@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Frijole|Montserrat&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style_devices.css">
+    <title>Devices</title>
+</head>
+<body>
+    <a href="/profile"><button>profile</button></a>
+    <h1><i class="material-icons">devices</i>Plant Vitals: Device Manager</h1>
+
+    <section>
+        <h2>Devices</h2>
+        <span>Add Device</span>
+        <form action="/devices" method="POST">
+            <label for="device-name">Device Name:</label>
+            <input type="text" name ='device_name' placeholder="e.g living-room, bedroom">
+            <label for="device-id">Device ID:</label>
+            <input type="text" name ='device_id' placeholder="device id">
+            <button>Add</button> 
+        </form>
+    </section>
+    <section>
+        <h2>Paired Devices</h2>
+        <ul>
+            <% for(var i=0; i < data.length; i++) {%>
+            <li>
+                <span><%= data[i].device_name %></span>
+                <span class="hide"><%= data[i].device_id %></span>
+                <span class ="dot"></span>
+                <span class ="trash-btn"><i class="material-icons">delete</i></span>
+            </li>
+    
+            <% } %>
+        </ul>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main_devices.js"></script>
+</body>
+</html>

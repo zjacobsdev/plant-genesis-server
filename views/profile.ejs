@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">   
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Frijole|Montserrat&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style_profile.css">
+
+
+    <title>Home</title>
+</head>
+<body>
+    <section class="container1">
+        <i class="material-icons">person</i>
+        <span>Welcome <span><%= data[1].usr %></span></span>
+        <h1><img src="img/main_logo.png" alt="Plant Genesis">Plant Genesis</h1>
+        <!-- <button><i class="material-icons">settings</i></button> -->
+       <a href="/unlink/local"><button>Log Out</button></a> 
+    </section>
+    
+    <a href="/devices"> <button id ="device_btn" type="button">Devices</button></a> 
+    <span class ="getId hide"><%= data[1].device_id %></span>   <!-- *add drop down to select a device -->
+    <h2><i class="material-icons">home</i>Home:<span>  <%= data[1].device_name %></span></h2>
+    <section class="container2">
+        <section class="data-container">
+            <span>Temperature</span>
+            <span id ="temp">N/A</span> 
+            <!-- <span class="dataLabels">&deg; F</span> -->
+            <!-- <span>Low</span>
+            <span>______________________________</span>
+            <span>High</span> -->
+        </section>
+        <section class ="data-container">
+            <span>Humidity</span>
+            <span id ="hum">N/A</span>
+            <!-- <span class="dataLabels">%</span> -->
+            <!-- <span>Low</span>
+            <span>______________________________</span>
+            <span>High</span> -->
+        </section>
+    </section>
+    <section class="container3">
+        <span>Daily Average(7 Day)</span>   <!-- <i class="material-icons">arrow_drop_down_circle</i> -->
+        <section class="hide hideDay">
+            <% for(var i=0; i < data.length; i++) {%>
+                <% if (user.local.email && data[i].device_id === '12345'){ %>
+
+                
+                        <span><%= data[i].daily_avg[0]%></span>
+                        <span><%= data[i].daily_avg[1]%></span>
+                        <span><%= data[i].daily_avg[2]%></span>
+                        <span><%= data[i].daily_avg[3]%></span>
+                        <span><%= data[i].daily_avg[4]%></span>
+                        <span><%= data[i].daily_avg[5]%></span>
+                        <span><%= data[i].daily_avg[6]%></span>
+                       
+  
+                <% } %>
+            <% } %>
+        </section>
+        <section>
+            <canvas id="dailyChart" width="400" height="100"></canvas>
+        </section>
+        <span>Weekly Average(7 Weeks)</span>
+        <section class="hide hideWeekly">
+            <% for(var i=0; i < data.length; i++) {%>
+                <% if (user.local.email && data[i].device_id === '12345'){ %>
+
+                        <span><%= data[i].weekly_avg[0]%></span>
+                        <span><%= data[i].weekly_avg[1]%></span>
+                        <span><%= data[i].weekly_avg[2]%></span>
+                        <span><%= data[i].weekly_avg[3]%></span>
+                        <span><%= data[i].weekly_avg[4]%></span>
+                        <span><%= data[i].weekly_avg[5]%></span>
+                        <span><%= data[i].weekly_avg[6]%></span>
+                        <span><%= data[i].weekly_avg[7]%></span>
+
+                <% } %>
+            <% } %>
+        </section>
+        <section>
+            <canvas id="weeklyChart" width="400" height="100"></canvas>
+        </section>
+    
+        <span>Monthly Average</span>
+        <section class="hide hideMonth">
+            <% for(var i=0; i < data.length; i++) {%>
+                <% if (user.local.email && data[i].device_id === '12345'){ %>
+
+                        <span><%= data[i].monthly_avg[0]%></span>
+                        <span><%= data[i].monthly_avg[1]%></span>
+                        <span><%= data[i].monthly_avg[2]%></span>
+                        <span><%= data[i].monthly_avg[3]%></span>
+                        <span><%= data[i].monthly_avg[4]%></span>
+                        <span><%= data[i].monthly_avg[5]%></span>
+                        <span><%= data[i].monthly_avg[6]%></span>
+                        <span><%= data[i].monthly_avg[7]%></span>
+                        <span><%= data[i].monthly_avg[8]%></span>
+                        <span><%= data[i].monthly_avg[9]%></span>
+                        <span><%= data[i].monthly_avg[10]%></span>
+                        <span><%= data[i].monthly_avg[11]%></span>
+
+                <% } %>
+            <% } %>
+        </section>
+        <section>
+            <canvas id="monthlyChart" width="400" height="100"></canvas>
+        </section>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
