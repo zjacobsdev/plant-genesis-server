@@ -1,4 +1,4 @@
-const socket = io.connect('https://192.168.1.153:8180')
+const socket = io.connect('https://plant-genesis.herokuapp.com/profile')
 
 const ctx = document.getElementById('dailyChart').getContext('2d');
 const ctx2 = document.getElementById('weeklyChart').getContext('2d');
