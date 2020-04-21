@@ -24,7 +24,7 @@ var db
 
 //var server = app.listen(port);
 var server = require('http').createServer(app)
-var io = require ('socket.io')(server)
+var io = require ('socket.io').listen(server)
 
 server.listen(port);
 
