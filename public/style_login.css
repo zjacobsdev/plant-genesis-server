@@ -8,28 +8,77 @@ html{
 body{
   padding-top:80px;
   word-wrap:break-word;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/logo_bg.jpg);
+  background-image: linear-gradient(rgba(143, 141, 141, 0.2), rgba(143, 141, 141, 0.2)), url(img/logo_bg.jpg);
 
 }
-.jumbotron h1{
-  
-  font-family: 'Cinzel Decorative', cursive;
-  font-size: 3rem;
-  color:rgb(101,67,33);
 
-}
 
 h2{
   font-size: 2rem;
   color: rgb(101,67,33)
 }
+label{
+
+  margin-right: 5%;
+  font-weight: 400;
+  padding: 0px;
+  font-size: 20px;
+  color: #808080;
+  line-height: 1.2;
+  text-align: right;
+  /* position: absolute;
+  top: 14px;
+  left: -105px;
+  width: 80px;  */
+}
+
+.form-control{
+
+touch-action: manipulation;
+margin: 0;
+overflow: visible;
+outline: none;
+border: none;
+border-bottom: 2px solid rgb(184, 181, 181);
+font-size: 15px;
+color: #555555;
+line-height: 1.2;
+display: inline;
+width: 75%;
+background: transparent;
+padding: 0 5px;
+height: 45px;
+}
+
+.jumbotron h1{
+  
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 3rem;
+  color:rgb(255, 255, 255);
+
+}
 
 .btn-warning {
-
-  font-family: 'Cinzel Decorative', cursive;
+  touch-action: manipulation;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  border: none;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 16px;
   color: #fff;
-  background-color:rgb(101,67,33);
-  border-color: rgb(113, 142, 3);
+  line-height: 1.2;
+  transition: all 0.4s;
+  cursor: pointer;
+  background-color: #333333;
+  margin: auto;
 }
 
 
@@ -67,15 +116,31 @@ h2{
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 25% 0%;
   padding: 70px 15px 74px 15px;
-}
-div.jumbotron {
+  /* background-color:rgb(18, 18, 78,.5); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/login_overlay.jpg);
 
+  
+}
+.input-contain{
+  padding: 10px 8% 10px 8%;
+}
+
+div.jumbotron {
+border: 1px solid rgb(138, 138, 138);
 padding-left: 0;
 padding-right: 0;
 
 }
+.email-margin{
+  margin-right: 11%;
+}
+
+
+
+
+
 
 @media screen and (min-width: 768px){
 

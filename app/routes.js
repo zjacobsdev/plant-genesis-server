@@ -91,7 +91,7 @@ module.exports = function(app, passport, db, io) {
    
    })
 
-  //snapshot current data on Dom
+  //snapshot current data on Dom and save to database
   app.put('/snapshot', (req, res) => {  
 
     console.log("saving to database")
