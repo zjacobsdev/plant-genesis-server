@@ -1,0 +1,39 @@
+Software/Hardware used:
+- Raspberry Pi Zero W
+- DHT11 Temperture and humity sensor 
+- Bi color led
+- Jumper Wires
+
+- Node.js(RPI + server),express.js, passport.js ect...
+- DHT11  package for RPI
+- Mongo DB
+- 
+
+
+Project Priorities:
+
+1) Display Temp and Humidity to WebPage
+    - Get values of Dh11 sensor with DHT11 npm package for RPI
+2) Calualte Daily Average Temp and Humidity
+    -Display as a table on the DOM
+3) User Login/ Signup
+4) CSS
+5)*Device Manager
+6) *led status light indicator to show connectio to internet and database
+7)
+8)
+
+*Reach Goals
+
+Other notes:
+
+
+- Database object contents{
+    usr_id:
+    device_id:
+    temp:
+    hum:
+    7dayAvg:
+    monAvg:
+
+}

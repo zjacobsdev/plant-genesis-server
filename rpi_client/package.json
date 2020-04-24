@@ -1,0 +1,22 @@
+{
+  "name": "plant_genesis",
+  "version": "1.0.0",
+  "description": "DHTLL tempurture/humidity sensor readings realtime",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zjacobsdev/demo-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zjacobsdev/demo-project/issues"
+  },
+  "homepage": "https://github.com/zjacobsdev/demo-project#readme",
+  "dependencies": {
+    "node-dht-sensor": "^0.4.1"
+  }
+}

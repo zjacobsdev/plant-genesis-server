@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+
+}
+html{
+    /* font-size: 10px; */
+}
+h1{
+    display: inline;
+    margin-left: 35%;
+
+}
+h2{
+    border-bottom: 2px solid black;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+button{
+    float: right;
+    margin-right: 2%;
+}
+.container1{
+    height: 40px;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+.data-container{
+    height: 300px;
+    width: 30%;
+    margin-left: 12%;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    float: left;
+
+    
+}
+.data-container span{
+    display: block;
+}
+.data-container span:nth-child(1){
+    font-weight: 700;
+    text-align: center;
+}
+.data-container span:nth-child(2){
+    height: 240px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    color: red;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 100px;
+}
+.data-container span:nth-child(n+3){
+    display: inline;
+    margin-left: 5%;
+}
+.data-container span:nth-child(4){
+    width: 70%;
+    height: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(65,65,178,1) 15%, rgba(60,174,184,1) 30%, rgba(57,193,53,1) 45%, rgba(198,196,73,1) 60%, rgba(189,196,49,1) 75%, rgba(255,114,60,1) 90%, rgba(255,0,0,1) 100%);
+}
+
+.container3{
+    clear: both;
+    border-top: 2px solid black;
+}
+.container3 span{
+    display: block;
+    border-bottom: 2px solid black;
+}
