@@ -50,7 +50,10 @@ label{
   color: #808080;
   line-height: 1.2;
   text-align: right;
-
+  /* position: absolute;
+  top: 14px;
+  left: -105px;
+  width: 80px;  */
 }
 
 .form-control{
@@ -107,6 +110,10 @@ h3{
 
 .jumbotron{
 
+  /* background-color: rgb(116, 192, 202);
+  border: 2px solid rgb(113, 142, 3);
+  border-radius: 20px; */
+
   width: 670px;
   background: #fff;
   border-radius: 10px;
@@ -135,8 +142,10 @@ h3{
   background-size: cover;
   background-position: 25% 0%;
   padding: 70px 15px 74px 15px;
+  /* background-color:rgb(18, 18, 78,.5); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/login_overlay.jpg);
- 
+
+  
 }
 .input-contain{
   padding: 10px 8% 10px 8%;

@@ -7,18 +7,15 @@ html{
     font-size: 10px;
 }
 body{
- background-color: rgb(116, 192, 202);
+ background-color: rgb(172, 220, 226);
 }
 h1{
-    height: 60px;
-    width: 60%;
-    font-family: 'Cinzel Decorative', cursive;
-    margin-top: 10px;
-    /* margin-left: 12%; */
-    text-align: center;
-    color: rgb(113, 142, 3);
-    font-size: 4rem;
     display: inline-block;
+    margin-left: 30%;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 7px;
     
 
 }
@@ -34,10 +31,10 @@ h1 + a{
     margin-right: 2%;
 }
 img{
-    height: 50px;
-    width: 50px;
-    margin-right: 3%;
-    
+    height: 25px;
+    width: 25px;
+    position: relative;
+    bottom: 5px;
   
   }
 a button{
@@ -52,13 +49,20 @@ a button{
 }
 
 section.container3 span{
-
+    display: block;
+    height: 40px;
+    width: auto;
+    /* margin-left: 5% ;
+    margin-right: 5%; */
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 2%;
+    padding-left: 2%;
+    background-color: rgb(128, 0, 128, 0.8);
+    border-radius: 10px;
+    text-align: center;
 
 }
-.material-icons + span{
+.header span{
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
 }
@@ -71,13 +75,14 @@ section.container3 span{
 .data-container{
     height: 275px;
     width: 275px;
-    margin-left: 25%;
+    margin-left: 17%;
     border: 2px solid black;
     margin-top: 20px ;
     margin-bottom: 20px;
     float: left;
-     background-color: rgb(0, 0, 0) ; 
+    background-color: rgb(48, 47, 47) ; 
     border-radius: 50%;
+    border: 1px solid grey;
     
  
 }
@@ -104,6 +109,7 @@ section.container3 span{
     padding-top: 60px;
     font-size: 6.5rem;
     background-color: rgb(228, 216, 176);
+    border: 1px solid grey;
 }
 .data-container span:nth-child(n+3){
     height: 50px;
@@ -121,7 +127,10 @@ section.container3 span{
 
 .container3{
     clear: both;
-    margin-top: 20px;
+    width: auto;
+    margin-top: 50px;
+    margin-left: 5% ;
+    margin-right: 5% ;
 }
 /* .container3 span{
     display: block;
@@ -143,12 +152,15 @@ section.container3 span{
 
 .container2{
     height: 315px;
-    width: 100%;
+    width: auto;
+    margin-left: 20%;
+    margin-right: 20%;
     
     /* background-image: url(img/logo_bg.jpg); */
     background-color: #0E2465;
-    border-top: 2px solid rgb(2, 90, 104) ;
-    border-bottom: 2px solid rgb(2, 90, 104) ;
+    border-radius: 10px;
+    border-top: 2px solid rgb(108, 109, 109) ;
+    border-bottom: 2px solid rgb(108, 109, 109) ;
 
 }
 .dataLabels{
@@ -157,6 +169,14 @@ section.container3 span{
     margin: 0;
 
 }
+.header{
+    background-color: rgba(58, 58, 128, 0.9);
+    height: 50px;
+    width: auto;
+    margin-bottom: 100px;
+    border-bottom: 2px solid rgb(85, 85, 85);
+  
+  }
 
 @media screen and (max-width: 1100px){
     .container2{

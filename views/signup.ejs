@@ -1,17 +1,24 @@
 <!doctype html>
 <html>
 <head>
-    <title>21 Savage Fan Site</title>
+    <title>Plant Genesis</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Frijole&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_signup.css">
 </head>
 <body>
-<div class="container">
-<div class="col-sm-6 col-sm-offset-3">
-
-    <h1><span class="fa fa-sign-in"></span> Signup</h1>
-
+    <section class="header">
+        <h1> <img src="img/main_logo.png" alt="Plant Genesis"> Plant Genesis</h1>
+     </section>
+<div class="container jumbotron">
+    <div class="login100-form-title">
+        <!-- <span class="login100-form-title-1">
+            Sign In
+        </span> -->
+        <h3>Sign Up</h3>
+    </div>
+    <section class= "input-contain">
     <% if (message.length > 0) { %>
         <div class="alert alert-danger"><%= message %></div>
     <% } %>
@@ -34,8 +41,7 @@
 
     <p>Already have an account? <a href="/login">Login</a></p>
     <p>Or go <a href="/">home</a>.</p>
-
-</div>
+</section>
 </div>
 </body>
 </html>

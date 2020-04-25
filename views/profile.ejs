@@ -12,15 +12,19 @@
     <title>Home</title>
 </head>
 <body>
-    <section class="container1">
+    <section class="header"> 
         <i class="material-icons">person</i>
         <span>Welcome <span><%= data[1].usr %></span></span>
-        <h1><img src="img/main_logo.png" alt="Plant Genesis">Plant Genesis</h1>
+        <h1> <img src="img/main_logo.png" alt="Plant Genesis"> Plant Genesis</h1>
+        <a href="/unlink/local"><button>Log Out</button></a> 
+        <a href="/devices"> <button id ="device_btn" type="button">Devices</button></a> 
+
+     </section>
+    <section class="container1">
+       
+        <span>Welcome <span><%= data[1].usr %></span></span>
         <!-- <button><i class="material-icons">settings</i></button> -->
-       <a href="/unlink/local"><button>Log Out</button></a> 
     </section>
-    
-    <a href="/devices"> <button id ="device_btn" type="button">Devices</button></a> 
     <span class ="getId hide"><%= data[1].device_id %></span>   <!-- *add drop down to select a device -->
     <h2><i class="material-icons">home</i>Home:<span>  <%= data[1].device_name %></span></h2>
     <section class="container2">
