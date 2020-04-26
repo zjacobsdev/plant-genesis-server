@@ -37,6 +37,10 @@ p{
   font-family: 'Noto Sans JP', sans-serif;
   color: rgb(255, 255, 255);
 }
+p span{
+  color: rgb(240, 224, 3);
+  font-weight: bolder;
+}
 p:nth-child(1){
   font-size: 5rem;
   margin-bottom: 40px;
