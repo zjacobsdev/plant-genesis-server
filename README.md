@@ -1,7 +1,9 @@
 # Plant Genesis
 This project demonstrates the skills I gain during Resilient Coders 2020A bootcamp. 
 
-This is a web application displaying real time data of the temperature and humidity of a DHT11 sensor. 
+This is a web application displaying real time data of the temperature and humidity of a DHT11 sensor and displays those reading in daily, weekly and monthly charts. 
+
+![alt text](/misc/plant_genesis_img.png "Plant Genesis Main Page")
 
 
 ## How It's Made
