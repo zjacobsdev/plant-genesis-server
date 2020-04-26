@@ -14,19 +14,14 @@
 <body>
     <section class="header"> 
         <i class="material-icons">person</i>
-        <span>Welcome <span><%= data[1].usr %></span></span>
+        <span>Welcome <span><%= data[0].usr %></span></span>
         <h1> <img src="img/main_logo.png" alt="Plant Genesis"> Plant Genesis</h1>
-        <a href="/unlink/local"><button>Log Out</button></a> 
-        <a href="/devices"> <button id ="device_btn" type="button">Devices</button></a> 
-
+      
+        <a href="/devices"> Devices</button></a> 
+         <!-- <a href="/unlink/local">Log Out</a>  -->
      </section>
-    <section class="container1">
-       
-        <span>Welcome <span><%= data[1].usr %></span></span>
-        <!-- <button><i class="material-icons">settings</i></button> -->
-    </section>
-    <span class ="getId hide"><%= data[1].device_id %></span>   <!-- *add drop down to select a device -->
-    <h2><i class="material-icons">home</i>Home:<span>  <%= data[1].device_name %></span></h2>
+    <span class ="getId hide"><%= data[0].device_id %></span>   <!-- *add drop down to select a device -->
+    <h2>Home:<span>  <%= data[0].device_name %></span></h2>
     <section class="container2">
         <section class="data-container">
             <span>Temperature</span>

@@ -10,22 +10,28 @@
     <title>Devices</title>
 </head>
 <body>
-    <a href="/profile"><button>profile</button></a>
-    <h1><i class="material-icons">devices</i>Plant Vitals: Device Manager</h1>
+    <section class="header">
+        <a href="/profile"><i class="material-icons">arrow_back</i> Back to Profile</a>
+        <h1><img src="img/main_logo.png" alt="Plant Genesis"> Plant Genesis</h1>   
+     </section>
+   
+    <h2 class = "devices-header"> Device Manager</h2>
 
     <section>
-        <h2>Devices</h2>
-        <span>Add Device</span>
+        <!-- <h2>Add Device</h2> -->
         <form action="/devices" method="POST">
+            <h2>Add Device</h2>
             <label for="device-name">Device Name:</label>
-            <input type="text" name ='device_name' placeholder="e.g living-room, bedroom">
+            <input type="text" name ='device_name' placeholder="e.g Living Room, Bedroom">
             <label for="device-id">Device ID:</label>
-            <input type="text" name ='device_id' placeholder="device id">
+            <input type="text" name ='device_id' placeholder="e.g 1btf34hd">
             <button>Add</button> 
         </form>
     </section>
     <section>
-        <h2>Paired Devices</h2>
+       
+        <section class="container1"> 
+         <h2>Paired Devices</h2>
         <ul>
             <% for(var i=0; i < data.length; i++) {%>
             <li>
@@ -37,6 +43,7 @@
     
             <% } %>
         </ul>
+    </section>
     </section>
     <script src="/socket.io/socket.io.js"></script>
     <script src="main_devices.js"></script>

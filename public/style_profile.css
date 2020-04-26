@@ -20,15 +20,17 @@ h1{
 
 }
 h2{
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
     display: inline-block;
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', bold;
+    font-size: 4rem;
+    margin-left: 38%;
 }
 h1 + a{
     float: right;
     margin-right: 2%;
+    text-decoration: none;
 }
 img{
     height: 25px;
@@ -37,14 +39,11 @@ img{
     bottom: 5px;
   
   }
-a button{
+a {
     float: right;
     margin-right: 2%;
     margin-top: 10px;
-    background-color:rgb(113, 142, 3);
     color: rgb(255, 255, 255);
-    border: 1px solid rgb(53, 83, 30);
-    border-radius: 5px;
     font-size: 1.8rem;
 }
 
@@ -57,14 +56,25 @@ section.container3 span{
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     padding-left: 2%;
-    background-color: rgb(128, 0, 128, 0.8);
+    background-color: rgb(128, 0, 128, 0.6);
     border-radius: 10px;
     text-align: center;
-
+    padding-top: 11px;
+    margin-bottom: 30px;
+    color: white;
 }
 .header span{
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 6px;
+}
+.header span span{
+    margin-left: .5%;
+    color: white;
+    position: relative;
+    bottom: 0px;
 }
 .container1{
     height: 80px;
@@ -155,9 +165,9 @@ section.container3 span{
     width: auto;
     margin-left: 20%;
     margin-right: 20%;
+    background-color: rgba(58, 58, 128, 0.9);
     
     /* background-image: url(img/logo_bg.jpg); */
-    background-color: #0E2465;
     border-radius: 10px;
     border-top: 2px solid rgb(108, 109, 109) ;
     border-bottom: 2px solid rgb(108, 109, 109) ;
@@ -173,10 +183,13 @@ section.container3 span{
     background-color: rgba(58, 58, 128, 0.9);
     height: 50px;
     width: auto;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     border-bottom: 2px solid rgb(85, 85, 85);
   
   }
+canvas{
+    margin-bottom: 40px;
+}
 
 @media screen and (max-width: 1100px){
     .container2{
