@@ -24,6 +24,7 @@ This is a web application displaying real time data of the temperature and humid
 
 1. run `node server.js`
 2. Navigate to `"your.local.IP.address":8180`
+3. Use demo login credentials: `Email: lilyflower@soil.com ` and `Password: 1`
 
 ## Updates
 
