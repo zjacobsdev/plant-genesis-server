@@ -1,9 +1,11 @@
 # Plant Genesis
 This project demonstrates the skills I gain during Resilient Coders 2020A bootcamp. 
 
-This is a web application displaying real time data of the temperature and humidity of a DHT11 sensor and displays those reading in daily, weekly and monthly charts. 
+This is a web application displaying real time data of the temperature and humidity of a DHT11 sensor using a Raspberry Pi 3 and displays those reading in daily, weekly and monthly charts. 
 
-![alt text](/misc/plant_genesis_img.png "Plant Genesis Main Page")
+**Link to Project**: https://plant-genesis.herokuapp.com/
+
+![alt text](./misc/plant_genesis_img.JPG "Plant Genesis Main Page")
 
 
 ## How It's Made
@@ -22,6 +24,7 @@ This is a web application displaying real time data of the temperature and humid
 
 1. run `node server.js`
 2. Navigate to `"your.local.IP.address":8180`
+3. Use demo login credentials: `Email: lilyflower@soil.com ` and `Password: 1`
 
 ## Updates
 
@@ -43,7 +46,7 @@ This is a web application displaying real time data of the temperature and humid
 
 - [Raspbian Installation](https://www.raspberrypi.org/documentation/installation/installing-images/)
 
-- [Raspberry Pi Setup with Node.js,Express,and MongoDB](https://www.instructables.com/id/How-to-Build-a-Website-on-a-Raspberry-Pi-With-Node/)
+- [Raspberry Pi Setup with Node.js, Express, and MongoDB](https://www.instructables.com/id/How-to-Build-a-Website-on-a-Raspberry-Pi-With-Node/)
 
 - [DHT11 data sheet](https://components101.com/dht11-temperature-sensor)
 
