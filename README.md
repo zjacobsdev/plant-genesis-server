@@ -3,6 +3,8 @@ This project demonstrates the skills I gain during Resilient Coders 2020A bootca
 
 This is a web application displaying real time data of the temperature and humidity of a DHT11 sensor and displays those reading in daily, weekly and monthly charts. 
 
+**Link to Project**: https://plant-genesis.herokuapp.com/
+
 ![alt text](./misc/plant_genesis_img.JPG "Plant Genesis Main Page")
 
 
