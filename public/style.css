@@ -28,6 +28,7 @@ h1{
   color: rgb(255, 255, 255);
   position: relative;
   bottom: 7px;
+  font-family: 'Exo 2', sans-serif;
  
 }
 
@@ -93,11 +94,12 @@ img{
 
 .signinQuote{
   margin-top: 20px;
+  margin-bottom: 30px;
   font-size: 3rem;
 
 
 }
 .plantImg{
-  height: 220px ;
-  width: 230px;
+  height: 180px ;
+  width: 220px;
 }

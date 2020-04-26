@@ -16,6 +16,8 @@ h1{
     color: rgb(255, 255, 255);
     position: relative;
     bottom: 7px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: normal;
     
 
 }
@@ -36,7 +38,7 @@ img{
     height: 25px;
     width: 25px;
     position: relative;
-    bottom: 5px;
+    bottom: -3px;
   
   }
 a {
