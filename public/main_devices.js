@@ -41,7 +41,7 @@ socket.on('connect', function(){
     Array.from(device_status).forEach(function(e) { 
       if (data.device_id === e.parentNode.childNodes[5].innerText ){
 
-        e.parentNode.childNodes[3].style.backgroundColor = 'green'
+        e.parentNode.childNodes[7].style.backgroundColor = 'green'
       }
     })
     } 
