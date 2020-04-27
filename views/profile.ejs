@@ -51,7 +51,7 @@
         <span>Daily Average(7 Day)</span>   <!-- <i class="material-icons">arrow_drop_down_circle</i> -->
         <section class="hide hideDay">
             <% for(var i=0; i < data.length; i++) {%>
-                <% if (user.local.email && data[i].device_id === '12345'){ %>
+                <% if (user.local.email === data[i].usr && data[i].device_id === '12345'){ %>
 
                 
                         <span><%= data[i].daily_avg[0]%></span>

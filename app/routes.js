@@ -134,7 +134,7 @@ module.exports = function(app, passport, db, io) {
   }))
 
     function setUp (req, res , next) {
-      db.collection('device_temp').save({usr:req.body.email, device_id: "12345", device_name:"home", data_collection: [], daily_avg: ["70.8", "79.8", "80.5", "81.8"," 78.3", "76.1", "89.1"], weekly_avg: ["56.7", "45.8", "42.2", "45.6", "36.1", "56.7", "60.3"] , monthly_avg:["32.1", "38.6", "40.3", "42.5", "56.6", "75.8", "81.2", "85.7", "72.3", "54.5", "40.2", "37.1" ] }, (err, result) => {
+      db.collection('device_temp').save({usr:req.body.email, device_id: "12345", device_name:"home", data_collection: [], daily_avg: ["70.8", "79.8", "80.5", "81.8"," 78.3", "76.1", "89.1"], weekly_avg: ["56.7", "45.8", "42.2", "45.6", "36.1", "56.7", "60.3"] , monthly_avg:["32.1", "38.6", "40.3", "42.5", "56.6", "75.8", "81.2", "85.7", "72.3", "54.5", "40.2", "37.1"] }, (err, result) => {
         if (err) return console.log(err)
         console.log('saved to database')
          next()
