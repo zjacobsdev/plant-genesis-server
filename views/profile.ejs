@@ -72,7 +72,7 @@
         <span>Weekly Average(7 Weeks)</span>
         <section class="hide hideWeekly">
             <% for(var i=0; i < data.length; i++) {%>
-                <% if (user.local.email && data[i].device_id === '12345'){ %>
+                <% if (user.local.email === data[i].usr && data[i].device_id === '12345'){ %>
 
                         <span><%= data[i].weekly_avg[0]%></span>
                         <span><%= data[i].weekly_avg[1]%></span>
@@ -93,7 +93,7 @@
         <span>Monthly Average</span>
         <section class="hide hideMonth">
             <% for(var i=0; i < data.length; i++) {%>
-                <% if (user.local.email && data[i].device_id === '12345'){ %>
+                <% if (user.local.email === data[i].usr  && data[i].device_id === '12345'){ %>
 
                         <span><%= data[i].monthly_avg[0]%></span>
                         <span><%= data[i].monthly_avg[1]%></span>
