@@ -44,12 +44,11 @@ module.exports = function(app, passport, db, io) {
         }
       db.collection('device_temp').find().toArray((err, result) => {
         if (err) return console.log(err)
-
-              
         
             res.render('profile.ejs', { //currently index.html
               user: req.user,
               data: result,
+        
              
             
             })
@@ -63,7 +62,7 @@ module.exports = function(app, passport, db, io) {
       if (err) return console.log(err)
     
       res.render('devices.ejs', { //currently index.html
-        //user: req.user,
+        user: req.user,
         data: result
       })
      
@@ -83,7 +82,7 @@ module.exports = function(app, passport, db, io) {
   // deletes devices
   app.delete('/devices', (req, res) => {   
     console.log(req.body.device_id)
-        db.collection('device_temp').findOneAndDelete({ device_id: req.body.device_id }, (err, result) => {
+        db.collection('device_temp').findOneAndDelete({ usr: req.body.usr, device_id: req.body.device_id }, (err, result) => {
           if (err) return res.send(500, err)
           console.log('Message deleted!')
           res.redirect('/devices')
@@ -128,12 +127,18 @@ module.exports = function(app, passport, db, io) {
   });
 
   // process the signup form
-  app.post('/signup', passport.authenticate('local-signup', {
+  app.post('/signup', setUp , passport.authenticate('local-signup', {
       successRedirect : '/profile', // redirect to the secure profile section
       failureRedirect : '/signup', // redirect back to the signup page if there is an error
       failureFlash : true // allow flash messages
-  }));
+  }))
 
+    function setUp (req, res , next) {
+      db.collection('device_temp').save({usr:req.body.email, device_id: "12345", device_name:"home", data_collection: [], daily_avg: [], weekly_avg: [] , monthly_avg:[] }, (err, result) => {
+        if (err) return console.log(err)
+        console.log('saved to database')
+         next()
+      })}
 
     // unlink local account 
   app.get('/unlink/local', isLoggedIn, function(req, res) {

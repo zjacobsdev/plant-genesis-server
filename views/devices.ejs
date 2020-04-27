@@ -35,14 +35,16 @@
          <h2>Paired Devices</h2>
         <ul>
             <% for(var i=0; i < data.length; i++) {%>
+                <% if (user.local.email === data[i].usr){ %>
             <li>
                 <span><%= data[i].device_name %></span>
+                <span class="hide"><%= data[i].usr %></span>
                 <span class="hide"><%= data[i].device_id %></span>
                 <span class ="dot"></span>
                 <span class ="trash-btn"><i class="material-icons">delete</i></span>
             </li>
-    
             <% } %>
+         <% } %>
         </ul>
     </section>
     </section>

@@ -7,19 +7,22 @@ const trash = document.querySelectorAll(".trash-btn")
 Array.from(trash).forEach(function(element) {
   //console.log(element)
       element.addEventListener('click', function(){
-        const device_id = this.parentNode.childNodes[3].innerText
+        const usr = this.parentNode.childNodes[3].innerText
+        const device_id = this.parentNode.childNodes[5].innerText
+
         console.log(device_id)
+        console.log(usr)
         fetch('/devices', {
               method: 'delete',
               headers: {'Content-Type': 'application/json'},
               body: JSON.stringify({
-                
+                    usr: usr,
                 device_id: device_id
               })
             })
             window.location.reload(true)
 
-      })
+       })
 
     
 });
