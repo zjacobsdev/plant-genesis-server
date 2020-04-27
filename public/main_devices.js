@@ -1,4 +1,4 @@
-var socket = io.connect('http://192.168.1.153:8180');
+var socket = io.connect('https://plant-genesis.herokuapp.com');
 
 const device_status = document.querySelectorAll(".dot")
 
