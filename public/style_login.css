@@ -42,8 +42,8 @@ h2{
   font-size: 2rem;
   color: rgb(101,67,33)
 }
-label{
 
+label{
   margin-right: 5%;
   font-weight: 400;
   padding: 0px;
@@ -51,6 +51,7 @@ label{
   color: #808080;
   line-height: 1.2;
   text-align: right;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -74,7 +75,7 @@ height: 45px;
 
 h3{
   
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   color:rgb(255, 255, 255);
 
@@ -151,6 +152,9 @@ padding-right: 0;
 }
 .email-margin{
   margin-right: 11%;
+}
+.login{
+  font-family: 'Montserrat', sans-serif;
 }
 
 

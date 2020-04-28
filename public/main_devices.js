@@ -26,10 +26,10 @@ Array.from(trash).forEach(function(element) {
 
     
 });
+
 // connect to socket io.
 socket.on('connect', function(){
   console.log("Client connected")
-  //console.log(socket)
 });
 
 

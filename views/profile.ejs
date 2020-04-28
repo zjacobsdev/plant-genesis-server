@@ -28,7 +28,7 @@
      <!-- <%= data[i].device_name %></span> -->
     <% } %>
 <% } %>
- <h2>Home:<span> Main Device</span></h2> 
+ <h2>Home:<span> Demo Device</span></h2> 
     <section class="container2">
         <section class="data-container">
             <span>Temperature</span>
@@ -48,7 +48,7 @@
         </section>
     </section>
     <section class="container3">
-        <span>Daily Average(7 Day)</span>   <!-- <i class="material-icons">arrow_drop_down_circle</i> -->
+        <span>Daily Average (7 Day)</span>   <!-- <i class="material-icons">arrow_drop_down_circle</i> -->
         <section class="hide hideDay">
             <% for(var i=0; i < data.length; i++) {%>
                 <% if (user.local.email === data[i].usr && data[i].device_id === '12345'){ %>
@@ -69,7 +69,7 @@
         <section>
             <canvas id="dailyChart" width="400" height="100"></canvas>
         </section>
-        <span>Weekly Average(7 Weeks)</span>
+        <span>Weekly Average (7 Weeks)</span>
         <section class="hide hideWeekly">
             <% for(var i=0; i < data.length; i++) {%>
                 <% if (user.local.email === data[i].usr && data[i].device_id === '12345'){ %>

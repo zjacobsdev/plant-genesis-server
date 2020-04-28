@@ -26,15 +26,12 @@ h1{
   position: relative;
   bottom: 7px;
   font-family: 'Exo 2', sans-serif;
- 
 }
 img{
   height: 25px;
   width: 25px;
   position: relative;
   bottom: 5px;
-
-
 }
 
 
@@ -42,6 +39,7 @@ h2{
   font-size: 2rem;
   color: rgb(101,67,33)
 }
+
 label{
 
   margin-right: 5%;
@@ -51,10 +49,8 @@ label{
   color: #808080;
   line-height: 1.2;
   text-align: right;
-  /* position: absolute;
-  top: 14px;
-  left: -105px;
-  width: 80px;  */
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 .form-control{
@@ -77,13 +73,15 @@ height: 45px;
 
 h3{
   
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
   color:rgb(255, 255, 255);
 
 }
 
 .btn-warning {
+  
+  font-family: 'Montserrat', sans-serif;
   touch-action: manipulation;
   margin: 0;
   overflow: visible;
@@ -110,25 +108,16 @@ h3{
 
 
 .jumbotron{
-
-  /* background-color: rgb(116, 192, 202);
-  border: 2px solid rgb(113, 142, 3);
-  border-radius: 20px; */
-
   width: 670px;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-
-
 }
 .container .jumbotron {
   border-radius: 20px;
   padding-left: 0;
 }
-
-
 .login100-form-title{
   margin: 0px;
   box-sizing: border-box;
@@ -161,10 +150,9 @@ padding-right: 0;
 .email-margin{
   margin-right: 11%;
 }
-
-
-
-
+.signin{
+  font-family: 'Montserrat', sans-serif;
+}
 
 
 @media screen and (min-width: 768px){

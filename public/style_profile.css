@@ -11,18 +11,17 @@ body{
 }
 h1{
     display: inline-block;
-    margin-left: 30%;
+    margin-left: 33%;
     font-size: 2.5rem;
     color: rgb(255, 255, 255);
     position: relative;
     bottom: 7px;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     
 
 }
 h2{
-    /* border-bottom: 2px solid black; */
     display: inline-block;
     margin-bottom: 50px;
     font-family: 'Montserrat', bold;
@@ -33,6 +32,8 @@ h1 + a{
     float: right;
     margin-right: 2%;
     text-decoration: none;
+    position: relative;
+    top: 5px;
 }
 img{
     height: 25px;
@@ -40,21 +41,20 @@ img{
     position: relative;
     bottom: -3px;
   
-  }
-a {
+}
+a{
     float: right;
     margin-right: 2%;
     margin-top: 10px;
     color: rgb(255, 255, 255);
     font-size: 1.8rem;
+    font-family: 'Montserrat', bold;
 }
 
 section.container3 span{
     display: block;
     height: 40px;
     width: auto;
-    /* margin-left: 5% ;
-    margin-right: 5%; */
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     padding-left: 2%;
@@ -65,25 +65,28 @@ section.container3 span{
     margin-bottom: 30px;
     color: white;
 }
+
 .header span{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: rgb(0, 0, 0);
     position: relative;
     bottom: 6px;
 }
+
 .header span span{
-    margin-left: .5%;
+    margin-left: .2%;
     color: white;
     position: relative;
     bottom: 0px;
 }
+
 .container1{
     height: 80px;
     width: 100%;
-    /* background-image: url(img/logo_bg.jpg); */
-    /* border-bottom: 2px solid black; */
+
 }
+
 .data-container{
     height: 275px;
     width: 275px;
@@ -95,14 +98,14 @@ section.container3 span{
     background-color: rgb(48, 47, 47) ; 
     border-radius: 50%;
     border: 1px solid grey;
-    
- 
 }
+
 .data-container span{
     display: block;
     border-radius: 50%; 
     color: white;
 }
+
 .data-container span:nth-child(1){
     font-weight: 700;
     text-align: center;
@@ -122,6 +125,7 @@ section.container3 span{
     font-size: 6.5rem;
     background-color: rgb(228, 216, 176);
     border: 1px solid grey;
+    font-family: 'Montserrat', sans-serif;
 }
 .data-container span:nth-child(n+3){
     height: 50px;
@@ -129,12 +133,7 @@ section.container3 span{
     text-align: center;
     margin-left: 5%;
 }
-/* .data-container span:nth-child(4){
-    width: 70%;
-    height: 10px;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(65,65,178,1) 15%, rgba(60,174,184,1) 30%, rgba(57,193,53,1) 45%, rgba(198,196,73,1) 60%, rgba(189,196,49,1) 75%, rgba(255,114,60,1) 90%, rgba(255,0,0,1) 100%);
-} */
+
 
 
 .container3{
@@ -144,14 +143,9 @@ section.container3 span{
     margin-left: 5% ;
     margin-right: 5% ;
 }
-/* .container3 span{
-    display: block;
-    border-bottom: 2px solid black;
-} */
 
 .tile li{
     display: inline;
-    /* float: left; */
     font-size: 5rem
 
 }
@@ -168,8 +162,6 @@ section.container3 span{
     margin-left: 20%;
     margin-right: 20%;
     background-color: rgba(58, 58, 128, 0.9);
-    
-    /* background-image: url(img/logo_bg.jpg); */
     border-radius: 10px;
     border-top: 2px solid rgb(108, 109, 109) ;
     border-bottom: 2px solid rgb(108, 109, 109) ;
@@ -192,6 +184,10 @@ section.container3 span{
 canvas{
     margin-bottom: 40px;
 }
+.chartjs-render-monitor {
+    font-family: 'Montserrat', sans-serif;   
+}
+
 
 /* @media screen and (max-width: 1100px){
     .container2{

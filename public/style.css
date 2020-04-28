@@ -34,7 +34,7 @@ h1{
 
 p{
   font-size: 3rem;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgb(255, 255, 255);
 }
 p span{
@@ -63,6 +63,12 @@ a{
   cursor: pointer;
   background-color: #333333;
   margin: auto;
+  font-family: 'Montserrat', sans-serif; 
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color: rgb(240, 224, 3);
 }
 
 img{
