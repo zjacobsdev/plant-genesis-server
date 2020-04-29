@@ -123,7 +123,7 @@ section.container3 span{
     text-align: center;
     padding-top: 60px;
     font-size: 6.5rem;
-    background-color: rgb(228, 216, 176);
+    background-color: rgb(230, 230, 230);
     border: 1px solid grey;
     font-family: 'Montserrat', sans-serif;
 }
@@ -184,8 +184,19 @@ section.container3 span{
 canvas{
     margin-bottom: 40px;
 }
-.chartjs-render-monitor {
-    font-family: 'Montserrat', sans-serif;   
+/* .chartjs-render-monitor {
+    font-family: 'Montserrat', sans-serif;
+    color: red;   
+} */
+footer{
+    text-align: center;
+    height: 50px;
+    width: auto;
+    background-color: rgba(58, 58, 128, 0.9);
+    color: white;
+    padding-top: 20px;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 

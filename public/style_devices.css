@@ -181,3 +181,17 @@ li span:nth-child(1){
 .material-icons:hover {
     color: red;
 }
+.container-main{
+  height: 440px;
+}
+
+footer{
+  text-align: center;
+  height: 50px;
+  width: auto;
+  background-color: rgba(58, 58, 128, 0.9);
+  color: white;
+  padding-top: 20px;
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+}
