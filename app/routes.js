@@ -165,6 +165,7 @@ module.exports = function(app, passport, db, io) {
 
 
 //////   gets the days data (data_collection) and save to a day_avg   ///////
+
 // setInterval(() => {
 
 // get db collection (data_collection), get array
