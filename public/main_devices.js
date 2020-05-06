@@ -5,7 +5,6 @@ const device_status = document.querySelectorAll(".dot")
 const trash = document.querySelectorAll(".trash-btn")
 
 Array.from(trash).forEach(function(element) {
-  //console.log(element)
       element.addEventListener('click', function(){
         const usr = this.parentNode.childNodes[3].innerText
         const device_id = this.parentNode.childNodes[5].innerText

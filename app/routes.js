@@ -1,5 +1,5 @@
 module.exports = function(app, passport, db, io) {
-  //var timer = null
+
 
       // show the Home Page
   app.get('/', function(req, res) {
@@ -12,25 +12,6 @@ module.exports = function(app, passport, db, io) {
 
         io.sockets.on ('connection', newConnection)
         io.sockets.setMaxListeners(0)
-
-      // setInterval(() => {
-      //     console.log("timer starts")
-      //     console.log(  io.sockets.on('dht', function (data){
-            
-            
-          
-      //    })  )
-
-      //   //   io.sockets.on('dht', function (data){
-            
-      //   //     console.log(data)
-          
-      //   //  })                
-        
-      //   }, 3000);
-
-        
-        //clearInterval(timer)
 
         function newConnection(socket){
 
@@ -45,7 +26,7 @@ module.exports = function(app, passport, db, io) {
       db.collection('device_temp').find().toArray((err, result) => {
         if (err) return console.log(err)
         
-            res.render('profile.ejs', { //currently index.html
+            res.render('profile.ejs', { 
               user: req.user,
               data: result,
         
@@ -61,7 +42,7 @@ module.exports = function(app, passport, db, io) {
     db.collection('device_temp').find().toArray((err, result) => {
       if (err) return console.log(err)
     
-      res.render('devices.ejs', { //currently index.html
+      res.render('devices.ejs', { 
         user: req.user,
         data: result
       })
@@ -200,6 +181,7 @@ module.exports = function(app, passport, db, io) {
 
 
 // ////// weekly SnapShot////
+
 // setInterval(() => {
   
 //   db.collection('device_temp').distinct( "day_avg", { device_id: "12345"})
@@ -228,6 +210,7 @@ module.exports = function(app, passport, db, io) {
 
 
 //   /////Monthly SnapShot///
+
 //   setInterval(() => {
   
 //     db.collection('device_temp').distinct( "data_collection", { device_id: "12345"})

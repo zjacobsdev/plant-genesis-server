@@ -33,22 +33,14 @@
         <section class="data-container">
             <span>Temperature</span>
             <span id ="temp">N/A</span> 
-            <!-- <span class="dataLabels">&deg; F</span> -->
-            <!-- <span>Low</span>
-            <span>______________________________</span>
-            <span>High</span> -->
         </section>
         <section class ="data-container">
             <span>Humidity</span>
             <span id ="hum">N/A</span>
-            <!-- <span class="dataLabels">%</span> -->
-            <!-- <span>Low</span>
-            <span>______________________________</span>
-            <span>High</span> -->
         </section>
     </section>
     <section class="container3">
-        <span>Daily Average (7 Day)</span>   <!-- <i class="material-icons">arrow_drop_down_circle</i> -->
+        <span>Daily Average (7 Day)</span> 
         <section class="hide hideDay">
             <% for(var i=0; i < data.length; i++) {%>
                 <% if (user.local.email === data[i].usr && data[i].device_id === '12345'){ %>

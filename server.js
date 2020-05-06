@@ -1,7 +1,4 @@
-// server.js
-
-// set up ======================================================================
-// get all the tools we need
+// main server set up ======================================================================
 var express  = require('express');
 var app      = express();
 var port     = process.env.PORT || 8180;
@@ -9,20 +6,15 @@ const MongoClient = require('mongodb').MongoClient
 var mongoose = require('mongoose');
 var passport = require('passport');
 var flash    = require('connect-flash');
-//var socket = require('socket.io');
 
 
 var morgan       = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 var session      = require('express-session');
-
 var configDB = require('./config/database.js');
-
 var db
 
-
-//var server = app.listen(port);
 var server = require('http').createServer(app)
 var io = require ('socket.io').listen(server)
 
@@ -30,7 +22,6 @@ server.listen(port);
 
 console.log('The magic happens on port ' + port); 
 
-//var io = socket(server)
 
 // configuration ===============================================================
 mongoose.connect(configDB.url, (err, database) => {
@@ -38,17 +29,6 @@ mongoose.connect(configDB.url, (err, database) => {
   db = database
   require('./app/routes.js')(app, passport, db, io);
 }); // connect to our database
-
-//app.listen(port, () => {
-    // MongoClient.connect(configDB.url, { useNewUrlParser: true }, (error, client) => {
-    //     if(error) {
-    //         throw error;
-    //     }
-    //     db = client.db(configDB.dbName);
-    //     console.log("Connected to `" + configDB.dbName + "`!");
-    //     require('./app/routes.js')(app, passport, db);
-    // });
-//});
 
 require('./config/passport')(passport); // pass passport for configuration
 
